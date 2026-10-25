@@ -1,3 +1,21 @@
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  z-index: -1;
+  pointer-events: none;
+  background: url('images/bg1.jpg') center / cover no-repeat;
+  opacity: 0.5;
+  -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
+  mask-image: linear-gradient(to bottom, #000 40%, transparent);
+}
+
+body.theme2::before {
+  background: url('images/bg2.jpg') center / cover no-repeat;
+}
 :root {
   --text: #f6eaf8;
   --accent: #e8b9f2;
