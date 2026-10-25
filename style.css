@@ -1,9 +1,4 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&display=swap" rel="stylesheet">
-
 :root {
-  
   --text: #f3e6f6;
   --accent: #e0b0ee;
   --muted: #b79bc4;
@@ -19,7 +14,6 @@
 }
 
 body.theme2 {
-
   --text: #3d3142;
   --accent: #b5748c;
   --muted: #8d7f93;
@@ -34,17 +28,17 @@ body.theme2 {
           linear-gradient(160deg, #fcf4ea 0%, #f7e4e6 50%, #dfe6ee 100%);
 }
 
-
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 26px 16px 70px;
   min-height: 100vh;
-  font-family: 'Bad Script', 'Marck Script', cursive;
-  font-size: 1.15rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--text);
   background: var(--page) fixed;
   background-color: #1a0e18;
@@ -52,16 +46,16 @@ body {
 }
 
 h1 {
-  font-family: 'Marck Script', cursive;
-  font-weight: 400;
-  font-size: 3.4rem;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 3.6rem;
   text-align: center;
   margin: 4px 0 14px;
   color: var(--accent);
   text-shadow: 0 0 22px var(--glow);
 }
 
-/* ============ КНОПКИ НЕДЕЛЬ ============ */
 .tabs {
   display: flex;
   justify-content: center;
@@ -70,8 +64,10 @@ h1 {
 }
 
 .tabs button {
-  font-family: 'Marck Script', cursive;
-  font-size: 1.4rem;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
   padding: 6px 26px 8px;
   border: 1px solid var(--accent);
   border-radius: 999px;
@@ -87,7 +83,6 @@ h1 {
   box-shadow: 0 0 20px var(--glow);
 }
 
-
 .week {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -96,7 +91,6 @@ h1 {
   margin: 0 auto;
 }
 .week[hidden] { display: none; }
-
 
 .day {
   background: var(--card);
@@ -111,9 +105,10 @@ h1 {
 .day:hover { transform: translateY(-3px); box-shadow: 0 12px 30px var(--glow); }
 
 .day h2 {
-  font-family: 'Marck Script', cursive;
-  font-weight: 400;
-  font-size: 2rem;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.2rem;
   margin: 0 0 8px;
   padding-bottom: 2px;
   color: var(--accent);
@@ -128,39 +123,36 @@ h1 {
   gap: 10px;
   align-items: baseline;
   padding: 5px 0;
-  line-height: 1.35;
-  text-shadow: 0 0 1px currentColor; 
+  line-height: 1.25;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.45rem;
 }
-
-.day li:nth-child(odd)  { transform: rotate(0.3deg); }
-.day li:nth-child(even) { transform: rotate(-0.4deg); }
-
 .day li::before {
   content: counter(lesson) ".";
-  font-family: 'Marck Script', cursive;
-  font-size: 1.15rem;
+  font-family: 'Cormorant Garamond', 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.3rem;
   color: var(--accent);
   min-width: 1.3em;
   flex: none;
 }
+.day li i { color: var(--muted); font-style: italic; }
 
-.day li i { color: var(--muted); font-style: normal; }
-
-/* сегодняшний день */
 .day.today {
   border: 2px solid var(--accent);
   box-shadow: 0 0 30px var(--glow);
 }
 .day.today h2::after {
   content: " ✦ сегодня";
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--muted);
 }
 
-
 .deco { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
 .d { position: absolute; color: var(--deco); opacity: var(--deco-op); }
-
 
 .u1 { width: 300px; height: 375px; left: -30px; bottom: -40px; }
 .u2 { width: 220px; height: 275px; right: 2%; top: 14%; transform: scaleX(-1); opacity: 0.14; }
@@ -170,7 +162,6 @@ h1 {
 .s3 { width: 26px; height: 26px; left: 46%; bottom: 14%; opacity: 0.35; }
 .s4 { width: 18px; height: 18px; right: 12%; top: 58%; opacity: 0.45; }
 
-
 .sh1 { width: 280px; height: 205px; left: -20px; bottom: -10px; }
 .sh2 { width: 190px; height: 140px; right: 4%; bottom: 2%; transform: scaleX(-1); opacity: 0.22; }
 .sh3 { width: 130px; height: 95px; right: 9%; top: 12%; opacity: 0.18; }
@@ -179,10 +170,10 @@ h1 {
 .f3 { width: 130px; height: 221px; right: -10px; bottom: 18%; opacity: 0.2; transform: rotate(14deg); }
 .f4 { width: 70px; height: 119px; left: 40%; bottom: -20px; opacity: 0.2; transform: rotate(-8deg); }
 
-
 @media (max-width: 600px) {
-  body { font-size: 1.1rem; padding: 20px 12px 60px; }
-  h1 { font-size: 2.7rem; }
+  body { font-size: 1.3rem; padding: 20px 12px 60px; }
+  h1 { font-size: 2.9rem; }
+  .day li { font-size: 1.3rem; }
   .week { grid-template-columns: 1fr; gap: 16px; }
   .u1 { width: 190px; height: 238px; }
   .u2 { width: 130px; height: 163px; }
@@ -192,13 +183,4 @@ h1 {
   .sh3 { display: none; }
   .f1 { width: 70px; height: 119px; }
   .f3 { width: 80px; height: 136px; }
-}
-body,
-.day,
-.day li,
-.day li i {
-  font-family: 'Marck Script', 'Bad Script', cursive !important;
-  font-size: 1.35rem;
-  font-weight: 400;
-  font-style: normal;
 }
