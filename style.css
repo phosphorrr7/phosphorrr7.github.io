@@ -2,10 +2,10 @@ body.theme2::before {
   content: "";
   display: block;
   position: absolute;
-  top: 210px;
+  top: 180px;
   left: 0;
   right: 0;
-  height: 830px;
+  height: 770px;
   z-index: -1;
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') top center / 100% auto no-repeat;
