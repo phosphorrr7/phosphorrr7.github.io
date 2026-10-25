@@ -1,4 +1,3 @@
-// Дата ПОНЕДЕЛЬНИКА любой недели, которая у тебя 1-я
 const WEEK1_START = new Date('2026-10-19');
 
 function currentWeek() {
@@ -7,6 +6,7 @@ function currentWeek() {
 }
 
 function showWeek(n) {
+  document.body.classList.toggle('theme2', n == 2);
   document.querySelectorAll('.week').forEach(function (w) {
     w.hidden = w.id !== 'week' + n;
   });
