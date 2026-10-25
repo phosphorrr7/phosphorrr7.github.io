@@ -22,9 +22,7 @@ document.querySelectorAll('.tabs button').forEach(function (b) {
 });
 
 var week = currentWeek();
-var today = document.querySelector(
-  '#week' + week + ' .day[data-day="' + new Date().getDay() + '"]'
-);
+var today = document.querySelector('#week' + week + ' .day[data-day="' + new Date().getDay() + '"]');
 if (today) today.classList.add('today');
 
 showWeek(week);
