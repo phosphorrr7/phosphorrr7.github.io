@@ -1,144 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Schedule</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Расписание</h1>
+<h1>Schedule</h1>
 
-  <div class="tabs">
-    <button data-week="1">1 неделя</button>
-    <button data-week="2">2 неделя</button>
-  </div>
+<div class="tabs">
+  <button data-week="1">Week 1</button>
+  <button data-week="2">Week 2</button>
+</div>
 
-  <!-- WEEK 1 -->
-  <div class="week" id="week1">
-    <section class="day" data-day="1"><h2>Понедельник</h2>
-      <ul>
-        <li>8:00 — Вышмат</li>
-        <li>10:30 – 12:30</li>
-        <li>12:20 — Укр. мова</li>
-        <li>14:30 – 16:30 (Дискретка 14:15 – 15:50)</li>
-        <li>17:00 – 19:00</li>
-        <li>19:30 – 21:30</li>
-      </ul></section>
-    <section class="day" data-day="2"><h2>Вторник</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:30 – 15:30</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="3"><h2>Среда</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:30 – 15:30</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="4"><h2>Четверг</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>12:20 — Вышмат</li>
-        <li>14:30 – 16:30</li>
-        <li>17:00 – 19:00</li>
-        <li>20:00 – 22:00</li>
-      </ul></section>
-    <section class="day" data-day="5"><h2>Пятница</h2>
-      <ul>
-        <li>Лабка</li>
-        <li>Англ</li>
-        <li>Физика</li>
-        <li>Семинар</li>
-        <li>16:00 – 18:00</li>
-        <li>18:30 – 20:30</li>
-        <li>21:00 – 23:00</li>
-      </ul></section>
-    <section class="day" data-day="6"><h2>Суббота</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:00 – 14:00</li>
-      </ul></section>
-    <section class="day" data-day="0"><h2>Воскресенье</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:00 – 14:00</li>
-      </ul></section>
-  </div>
+<div class="week" id="week1">
+  <section class="day" data-day="1"><h2>Monday</h2><ul>
+    <li>8:00 — Higher Math</li>
+    <li>10:30 – 12:30</li>
+    <li>12:20 — Ukrainian</li>
+    <li>14:30 – 16:30 (Discrete Math 14:15 – 15:50)</li>
+    <li>17:00 – 19:00</li>
+    <li>19:30 – 21:30</li>
+  </ul></section>
+  <section class="day" data-day="2"><h2>Tuesday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:30 – 15:30</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="3"><h2>Wednesday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:30 – 15:30</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="4"><h2>Thursday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>12:20 — Higher Math</li>
+    <li>14:30 – 16:30</li>
+    <li>17:00 – 19:00</li>
+    <li>20:00 – 22:00</li>
+  </ul></section>
+  <section class="day" data-day="5"><h2>Friday</h2><ul>
+    <li>Lab</li>
+    <li>English</li>
+    <li>Physics</li>
+    <li>Seminar</li>
+    <li>16:00 – 18:00</li>
+    <li>18:30 – 20:30</li>
+    <li>21:00 – 23:00</li>
+  </ul></section>
+  <section class="day" data-day="6"><h2>Saturday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:00 – 14:00</li>
+  </ul></section>
+  <section class="day" data-day="0"><h2>Sunday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:00 – 14:00</li>
+  </ul></section>
+</div>
 
-  <!-- WEEK 2 -->
-  <div class="week" id="week2" hidden>
-    <section class="day" data-day="1"><h2>Понедельник</h2>
-      <ul>
-        <li>8:00 – 10:00 — Вышмат</li>
-        <li>10:30 – 12:30</li>
-        <li>13:00 – 15:00 (Дискретка 14:15 – 15:50)</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="2"><h2>Вторник</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:30 – 15:30</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="3"><h2>Среда</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:30 – 15:30</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="4"><h2>Четверг</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>12:30 – 15:50 — Вышмат</li>
-        <li>16:00 – 18:00</li>
-        <li>19:00 – 21:00</li>
-        <li>21:15 – 23:15</li>
-      </ul></section>
-    <section class="day" data-day="5"><h2>Пятница</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30 (Англ 8:30 – 12:00)</li>
-        <li>12:20 – 13:55 — Физика</li>
-        <li>14:30 – 16:30</li>
-        <li>17:00 – 19:00</li>
-        <li>20:00 – 22:00</li>
-      </ul></section>
-    <section class="day" data-day="6"><h2>Суббота</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>12:20 – 15:55 — Ц.З.</li>
-        <li>16:00 – 17:00</li>
-      </ul></section>
-    <section class="day" data-day="0"><h2>Воскресенье</h2>
-      <ul>
-        <li>8:00 – 10:00</li>
-        <li>10:30 – 12:30</li>
-        <li>13:00 – 14:00</li>
-      </ul></section>
-  </div>
+<div class="week" id="week2" hidden>
+  <section class="day" data-day="1"><h2>Monday</h2><ul>
+    <li>8:00 – 10:00 — Higher Math</li>
+    <li>10:30 – 12:30</li>
+    <li>13:00 – 15:00 (Discrete Math 14:15 – 15:50)</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="2"><h2>Tuesday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:30 – 15:30</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="3"><h2>Wednesday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:30 – 15:30</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="4"><h2>Thursday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>12:30 – 15:50 — Higher Math</li>
+    <li>16:00 – 18:00</li>
+    <li>19:00 – 21:00</li>
+    <li>21:15 – 23:15</li>
+  </ul></section>
+  <section class="day" data-day="5"><h2>Friday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30 (English 8:30 – 12:00)</li>
+    <li>12:20 – 13:55 — Physics</li>
+    <li>14:30 – 16:30</li>
+    <li>17:00 – 19:00</li>
+    <li>20:00 – 22:00</li>
+  </ul></section>
+  <section class="day" data-day="6"><h2>Saturday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>12:20 – 15:55 — Ts.Z.</li>
+    <li>16:00 – 17:00</li>
+  </ul></section>
+  <section class="day" data-day="0"><h2>Sunday</h2><ul>
+    <li>8:00 – 10:00</li>
+    <li>10:30 – 12:30</li>
+    <li>13:00 – 14:00</li>
+  </ul></section>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
