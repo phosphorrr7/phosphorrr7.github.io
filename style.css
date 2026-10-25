@@ -13,7 +13,6 @@ body.theme2::before {
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
 }
-}
 :root {
   --text: #f6eaf8;
   --accent: #e8b9f2;
