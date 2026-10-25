@@ -7,7 +7,7 @@ body::before {
   height: 320px;
   z-index: -1;
   pointer-events: none;
-  background: url('images/bg1.jpg') center / cover no-repeat;
+  background: url('images/imagesbg1.jpg.jpg') center / cover no-repeat;
   opacity: 0.5;
   -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
   mask-image: linear-gradient(to bottom, #000 40%, transparent);
