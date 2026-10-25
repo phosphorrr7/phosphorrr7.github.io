@@ -2,7 +2,7 @@ body.theme2::before {
   content: "";
   display: block;
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 0;
   right: 0;
   height: 790px;
