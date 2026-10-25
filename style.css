@@ -6,10 +6,10 @@ body.theme2::before {
   content: "";
   display: block;
   position: absolute;
-  top: 160px;
+  top: 90px;
   left: 0;
   right: 0;
-  height: 320px;
+  height: 520px;
   z-index: -1;
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') center / cover no-repeat;
