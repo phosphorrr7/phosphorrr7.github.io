@@ -9,23 +9,17 @@ body.theme2::before {
   top: 0;
   left: 0;
   right: 0;
-  height: 700px;
+  height: 650px;
   z-index: -1;
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') center top / cover no-repeat;
   opacity: 0.6;
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 40%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 40%, transparent 100%);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-}
-
-@media (max-width: 600px) {
-  body.theme2::before {
-    height: 520px;
-  }
 }
 :root {
   --text: #f6eaf8;
