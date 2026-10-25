@@ -10,8 +10,6 @@ body.theme2::before {
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') top center / 100% auto no-repeat;
   opacity: 0.55;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
 }
 :root {
   --text: #f6eaf8;
