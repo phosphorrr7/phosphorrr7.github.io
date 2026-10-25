@@ -129,10 +129,10 @@ h1 {
 }
 @media (max-width: 600px) {
   body.theme2::before {
-    top: 110px;
-    height: 520px;
+    top: 0;
+    height: 560px;
     background-size: cover;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 50%, transparent 100%);
   }
 }
