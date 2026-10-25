@@ -1,11 +1,15 @@
+body::before {
+  display: none;
+}
+
 body.theme2::before {
   content: "";
   display: block;
   position: absolute;
-  top: 280px;
+  top: 190px;
   left: 0;
   right: 0;
-  height: 900px;
+  height: 800px;
   z-index: -1;
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') top center / 100% auto no-repeat;
@@ -13,6 +17,7 @@ body.theme2::before {
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
 }
+
 :root {
   --text: #f6eaf8;
   --accent: #e8b9f2;
