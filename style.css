@@ -12,7 +12,7 @@ body.theme2::before {
   height: 320px;
   z-index: -1;
   pointer-events: none;
-  background: url('images/bg2.jpg') center / cover no-repeat;
+  background: url('images/bg11.jpg') center / cover no-repeat;
   opacity: 0.5;
   -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
   mask-image: linear-gradient(to bottom, #000 40%, transparent);
