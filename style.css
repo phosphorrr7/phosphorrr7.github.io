@@ -1,5 +1,10 @@
 body::before {
+  display: none;
+}
+
+body.theme2::before {
   content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -7,14 +12,10 @@ body::before {
   height: 320px;
   z-index: -1;
   pointer-events: none;
-  background: url('images/imagesbg1.jpg.jpg') center / cover no-repeat;
+  background: url('images/bg2.jpg') center / cover no-repeat;
   opacity: 0.5;
   -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
   mask-image: linear-gradient(to bottom, #000 40%, transparent);
-}
-
-body.theme2::before {
-  background: url('images/bg2.jpg') center / cover no-repeat;
 }
 :root {
   --text: #f6eaf8;
