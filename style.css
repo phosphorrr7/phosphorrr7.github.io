@@ -1,0 +1,31 @@
+index.html
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  border: 1px solid #888;
+  background: white;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #333;
+  color: white;
+}
+
+.day {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 12px 0;
+}
+
+.day.today {
+  border-color: #2a7;
+  background: #e8f8ee;
+}
