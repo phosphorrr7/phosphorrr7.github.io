@@ -9,7 +9,7 @@ body.theme2::before {
   top: 0;
   left: 0;
   right: 0;
-  height: 520px;
+  height: 820px;
   z-index: -1;
   pointer-events: none;
   background: url('images/bg11.jpg.jpg') center / cover no-repeat;
