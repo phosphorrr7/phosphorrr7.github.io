@@ -1,6 +1,6 @@
 index.html
 // Поставь сюда дату ПОНЕДЕЛЬНИКА любой недели, которая у тебя 1-я
-const WEEK1_START = new Date('2026-10-19');
+const WEEK1_START = new Date('2026-10-26');
 
 function currentWeek() {
   const diff = Math.floor((new Date() - WEEK1_START) / (7 * 24 * 3600 * 1000));
