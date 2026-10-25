@@ -1,17 +1,31 @@
+body::before {
+  display: none;
+}
+
 body.theme2::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
-  height: 790px;
+  height: 700px;
   z-index: -1;
   pointer-events: none;
-  background: url('images/bg11.jpg.jpg') top center / 100% auto no-repeat;
-  opacity: 0.65;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, #000 28%, #000 65%, transparent 100%);
+  background: url('images/bg11.jpg.jpg') center top / cover no-repeat;
+  opacity: 0.6;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  body.theme2::before {
+    height: 520px;
+  }
 }
 :root {
   --text: #f6eaf8;
@@ -127,12 +141,4 @@ h1 {
   .day h2 { font-size: 2.2rem; }
   .week { grid-template-columns: 1fr; gap: 16px; }
 }
-@media (max-width: 600px) {
-  body.theme2::before {
-    top: 0;
-    height: 560px;
-    background-size: cover;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 50%, transparent 100%);
-  }
-}
+
