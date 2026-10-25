@@ -127,3 +127,15 @@ h1 {
   .day h2 { font-size: 2.2rem; }
   .week { grid-template-columns: 1fr; gap: 16px; }
 }
+@media (max-width: 600px) {
+  body.theme2::before {
+    top: 110px;
+    height: 460px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 35%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 35%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+}
